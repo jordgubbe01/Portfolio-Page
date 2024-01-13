@@ -1,0 +1,119 @@
+:root {
+  --purpleC: #9d59d2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  height: 70px;
+  display: flex;
+  flex-direction: rows;
+  gap: 12px;
+  margin: 0;
+  color: #282828;
+  width: 100%;
+  justify-content: flex-end;
+  background-image: linear-gradient(to right, #914686, var(--purpleC));
+  position: fixed;
+  top: 0;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+#welcome {
+  height: 100vh;
+  background-image: linear-gradient(#363435, #282828);
+  width: 100%;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fade-in {
+  color: var(--purpleC);
+  font-size: clamp(20px, 45px, 70px);
+ animation: FadeIn 3s;
+   margin: 3px;
+}
+.fade-in2 {
+  color: var(--purpleC);
+  font-size: clamp(20px, 45px, 70px);
+ animation: FadeIn 7s;
+  margin: 3px;
+}
+.fade-in3 {
+  color: var(--purpleC);
+  font-size: clamp(20px, 45px, 70px);
+   margin: 3px;
+ animation: FadeIn 11s;
+}
+
+@keyframes FadeIn {
+  from {
+  opacity: 0;
+  color: #914686;
+  }
+to {
+  opacity: 1;
+  color: var(--purpleC);
+  
+}
+}
+.works {
+  background: #f7d5e6;
+  color: #282828;
+}
+.elem1 {
+  margin: 0 auto 30 auto;
+  text-align: center;
+  color: #282828;
+  font-size: clamp(20px, 45px, 70px);
+}
+.img {
+  border-radius: 10px;
+  width: 600px;
+  height: 340px;
+  object-fit: fill;
+  border-right: 2px solid #282828;
+  border-left: 2px solid #282828;
+  border-top: 2px solid #282828;
+}
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.flex3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.capt {
+  padding-top: 10px;
+  width: 600px;
+  border-right: 2px solid #282828;
+  border-left: 2px solid #282828;
+  border-bottom: 2px solid #282828;
+  text-align: center;
+}
+
+.hope {
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(to bottom,#282828, #f7d5e6)
+}
+
+
